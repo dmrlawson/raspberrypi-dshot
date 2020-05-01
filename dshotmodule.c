@@ -111,7 +111,7 @@ dshot_send(PyObject *self, PyObject *args)
         GPIO_CLR = 1<<pin;
     }
 
-    send_throttle(ping value, 0);
+    send_throttle(pin, value, 0);
 
     Py_RETURN_TRUE;
 }
